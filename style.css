@@ -85,7 +85,7 @@ button {
 
 /* Heading */
 
-.add-element__label,
+.add-element__title,
 .incompleted__title,
 .completed__title {
     color: #333;
@@ -117,7 +117,7 @@ button {
 }
 
 /* New Task */
-.add-element__label {
+.add-element__title {
     display: block;
     margin: 0 0 20px;
 }
