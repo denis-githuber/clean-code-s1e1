@@ -10,11 +10,13 @@ ul {
     padding: 0px;
 }
 
-li, h3 {
+li, 
+h3 {
     list-style: none;
 }
 
-input, button {
+input, 
+button {
     outline: none;
 }
 
@@ -47,7 +49,9 @@ input, button {
     margin: 0 auto 0;
 }
 
-.add-elemen__input, .task__label, .task__input {
+.add-elemen__input, 
+.task__label, 
+.task__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -57,7 +61,9 @@ input, button {
     display: flex;
 }
 
-.add-element__btn, .task__edit-btn, .task__delete-btn {
+.add-element__btn, 
+.task__edit-btn, 
+.task__delete-btn {
     background: none;
     border: 0px;
     color: #888;
@@ -67,7 +73,9 @@ input, button {
     cursor: pointer;
 }
 
-.add-element__btn:hover, .task__edit-btn:hover, .task__delete-btn:hover {
+.add-element__btn:hover, 
+.task__edit-btn:hover, 
+.task__delete-btn:hover {
     color: #3a3A3a;
 }
 
@@ -85,7 +93,8 @@ input, button {
     text-transform: uppercase;
 }
 
-.task__input, .add-element__input {
+.task__input, 
+.add-element__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -98,7 +107,8 @@ input, button {
     color: #888;
 }
 
-.task__input:focus, .add-element__input:focus {
+.task__input:focus, 
+.add-element__input:focus {
     color: #333;
 }
 
@@ -122,7 +132,11 @@ input, button {
     align-items: center;
 }
 
-.task__checkbox, .task__label, .task__input, .task__edit-btn, .task__delete-btn {
+.task__checkbox, 
+.task__label, 
+.task__input, 
+.task__edit-btn, 
+.task__delete-btn {
     vertical-align: middle;
 }
 
