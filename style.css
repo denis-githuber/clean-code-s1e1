@@ -4,34 +4,34 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.header img {
     width: 100%;
 }
-.aaa .more_inf {
+.header .header__information {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.header { text-align: center;
 }
 }
-.centered-main-page-element {
+.container {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.add-elemen__input, .task__label, .task__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.add-element__container {
     display: flex;
 }
 ul {
@@ -44,7 +44,7 @@ li, h3 {
 input,button{
     outline:none;
 }
-button {
+button, .add-element__btn {
     background: none;
     border: 0px;
     color: #888;
@@ -53,12 +53,12 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.add-element__btn:hover, button:hover {
     color: #3a3A3a;
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+.add-element__label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -67,7 +67,7 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.task__input, .add-element__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,7 +79,7 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.task__input:focus, .add-element__input:focus {
     color: #333;
 }
 
@@ -93,7 +93,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+li, .task__item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -106,7 +106,7 @@ li > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+li > input[type="checkbox"], .task__checkbox {
     margin: 0 10px;
 }
 li > label {
@@ -115,15 +115,15 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.task__input {
     width: 226px
 }
-button.delete img {
+button.task__delete-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.task__delete-btn img:hover {
     transform: rotateZ(0);
 }
 
@@ -138,11 +138,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.task__item_edit input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+ul li.task__item_edit label {
     display:none;
 }
