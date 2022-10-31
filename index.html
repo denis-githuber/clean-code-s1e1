@@ -5,9 +5,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
   <div class="header">
-    <img src="./eisenhower-matrix.jpg">
+    <img src="./eisenhower-matrix.jpg" class="header__img">
     <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
   <div class="container">
@@ -18,7 +18,7 @@
         <button class="add-element__btn">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
+    <h3 class="incompleted__title">Todo</h3>
     <ul id="incompleted-tasks" class="task">
       <li class="task__item">
         <input type="checkbox" class="task__checkbox">
@@ -26,7 +26,7 @@
         <input type="text" class="task__input">
         <button class="task__edit-btn">Edit</button>
         <button class="task__delete-btn">
-          <img src="./remove.svg">
+          <img src="./remove.svg" class="task__btn-icon">
         </button>
       </li>
       <li class="task__item task__item_edit">
@@ -35,18 +35,18 @@
         <input type="text" value="Go Shopping" class="task__input">
         <button class="task__edit-btn">Save</button>
         <button class="task__delete-btn">
-          <img src="./remove.svg">
+          <img src="./remove.svg" class="task__btn-icon">
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
-    <ul id="completed-tasks" class="task">
-      <li><input type="checkbox" checked class="task__checkbox">
+    <h3 class="completed__title">Completed</h3>
+    <ul id="completed-tasks" class="task task_completed">
+      <li class="task__item"><input type="checkbox" checked class="task__checkbox">
         <label class="task__label">See the Doctor</label>
         <input type="text" class="task__input">
         <button class="task__edit-btn">Edit</button>
         <button class="task__delete-btn">
-          <img src="./remove.svg">
+          <img src="./remove.svg" class="task__btn-icon">
         </button>
       </li>
     </ul>
